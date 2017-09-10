@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import ReactFusionComp from './ReactFusionComp';
+import ReactHighComp from './ReactHighComp';
 
 var myDataSource = {
 		chart: {
@@ -41,7 +42,13 @@ var myDataSource = {
 	  	dataSource: myDataSource
     };
 
+// ReactDOM.render(
+// 	<ReactFusionComp config={revenueChartConfigs} />,
+// 	document.getElementById('chart-container')
+// );
+
 ReactDOM.render(
-	<ReactFusionComp config={revenueChartConfigs} />,
+	<ReactHighComp config={revenueChartConfigs} />,
 	document.getElementById('chart-container')
 );
+
