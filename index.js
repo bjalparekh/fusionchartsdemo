@@ -35,20 +35,21 @@ var myDataSource = {
 	},
 
 	revenueChartConfigs = {
-		type: "column2d",
+		type: "pie2D",
 		width:600,
 	    height: 400,
 	  	dataFormat: "json",
 	  	dataSource: myDataSource
     };
 
-// ReactDOM.render(
-// 	<ReactFusionComp config={revenueChartConfigs} />,
-// 	document.getElementById('chart-container')
-// );
+	
 
 ReactDOM.render(
-	<ReactHighComp config={revenueChartConfigs} />,
+	<ReactFusionComp config={revenueChartConfigs} />,
 	document.getElementById('chart-container')
+);
+ReactDOM.render(
+	<ReactHighComp config={revenueChartConfigs} />,
+	document.getElementById('chart-container1')
 );
 
