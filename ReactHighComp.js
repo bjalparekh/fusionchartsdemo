@@ -15,7 +15,9 @@ export default class ReactHighComp extends Component {
         Highcharts.chart('hc', {
             chart: {
                 renderTo: 'container',
-                type: 'pie'
+                type: 'pie',
+                width: 600,
+                height:400
             },
             title: {
                 text: 'Fruit Consumption'
@@ -40,7 +42,7 @@ export default class ReactHighComp extends Component {
 
     render() {
         return (
-            <div id="rfc">
+            <div id="rhc">
             </div>
         )
     }
